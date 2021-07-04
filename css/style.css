@@ -488,10 +488,14 @@
       }
       
       .product {
-        width: 300px;
+        max-width: 300px;
         display: flex;
         flex-direction: column;
         flex-grow: 1;
+      }
+
+      .product_2 {
+        margin: 0 110px;
       }
 
       .outline {
@@ -605,10 +609,7 @@
          display: flex;
          flex-flow: row wrap;
          margin: 0;
-       }
-       .item {
-         width: 49%;
-       }
+       
        .item_2 {
          margin-left: 5px;
          margin-bottom: 5px;
@@ -691,3 +692,17 @@
         margin: 50px 35px;
         padding: 0;
       }
+     }
+
+     @media (max-width: 640px) {
+      .menu-list {
+        display: none;
+      }
+      .materials {
+        max-width: 360px;
+      }
+      .item {
+        width: 100%;
+      }
+     }
+
