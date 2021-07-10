@@ -36,6 +36,11 @@
                 </li>
               </ul>
             </nav>
+          <div class="menu-toggle">
+            <div class="strip"></div>
+            <div class="strip"></div>
+            <div class="strip"></div>
+          </div>
           </div>
       
           <div>
@@ -615,3 +620,49 @@
       </footer>
 </body>
 </html>
+
+
+<div class="form-popup_hidden" id="Feedback">
+  <button class="popup__close" type="button"></button>
+  <form class="form-container">
+    <h3 class="banner_top">Ваш фидбек</h3>
+    
+    <div class="some-questions">
+      <form class="form-1">
+        <div class="form-group">
+          <label class="select-group">
+            <span class="select-label">Как часто вы заходите на сайт?</span>
+            <div class="choose">
+            <select class="select">
+              <option value="each-day" selected>Почти каждый день</option>
+              <option>Раз в неделю</option>
+              <option>Раз в месяц</option>
+              <option>Очень редко</option>
+            </select>
+          </div>
+          </label>
+        </div>
+        </form>
+    </div>
+
+        <form class="choose-variant">
+          <p>Вы подписаны на e-mail рассылку?</p>
+          <label class="radio-button">
+            <input type="radio" class="radio" name="radio-group"> 
+              <span class="radio-group-text-1">Да</span>
+            <input type="radio" class="radio" name="radio-group"> 
+              <span class="radio-group-text-2">Нет</span>
+          </label>
+        </form>
+      
+      <div class="form-row"> 
+        <span class="form-hint">Расскажите, какой контент вы бы хотели видеть на нашем сайте?
+        </span>
+      
+        <input type="text" class="from-client"
+          placeholder="Может, больше рецептов?" required>
+      </div>
+        <button type="submit" class="btn">Отправить</button>
+  </form>
+
+</div>
